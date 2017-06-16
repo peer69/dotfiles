@@ -1,0 +1,41 @@
+########################################################################
+#
+# ~/.screenrc
+# Konfigurationsdatei fuer screen
+#
+########################################################################
+
+########################################################################
+# Variabeln
+#setenv FOO bar
+
+########################################################################
+# Allgemein
+startup_message  off   # Keine Willkommensnachricht
+vbell            off   # Kein visuelles Blinken
+msgwait 1              # Nachrichten für 1 Sekunden anzeigen
+defutf8          on    # utf8 bei neuen fenstern
+autodetach       on    # on = default
+shelltitle   'bash'    # Fenstertitel
+hardcopydir $HOME      # Screenshots ins Homeverzeichnis
+defscrollback 10000    # Buffer
+defmonitor off         # Aktivitäten nicht in Fenstertitel schreiben
+
+########################################################################
+# Meine Fenster
+screen -t bash
+# screen -t irssi irssi
+# screen -t syslog sudo tail -f /var/log/everything.log
+# screen -t ncmpcpp ncmpcpp
+select 0
+
+########################################################################
+# Statuszeile
+caption always "%{= wk} %-w%{= KW} [%n %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
+
+# Enable mouse scrolling and scroll bar history scrolling
+#altsreen on
+termcapinfo xterm*|xs|rxvt* ti=\E7\E[?47l:te@
+termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+#termcapinfo xterm*|rxvt* ‘ti@:te@’
+hardstatus off
