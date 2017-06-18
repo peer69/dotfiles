@@ -31,11 +31,16 @@ select 0
 
 ########################################################################
 # Statuszeile
-caption always "%{= wk} %-w%{= KW} [%n %t] %{-}%+w %= | @%H | %l | %Y-%m-%d %c "
+caption always "%{= wk} %-w%{= KW} [%n %t] %{-}%+w %= %Y-%m-%d %c "
+#hardstatus alwayslastline
+#hardstatus string '%{= kG}%-Lw%{= kW}%50> %n*%f %t%{= kG}%+Lw%< %{= kG}%-=%Y-%m-%d %c %1`%{-}'
+#hardstatus off 
 
 # Enable mouse scrolling and scroll bar history scrolling
-#altsreen on
-termcapinfo xterm*|xs|rxvt* ti=\E7\E[?47l:te@
-termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
-#termcapinfo xterm*|rxvt* ‘ti@:te@’
-hardstatus off
+altscreen on
+#termcapinfo xterm*|xs|rxvt* ti=\E7\E[?47l:te@
+#termcapinfo xterm* 'is=\E[r\E[m\E[2J\E[H\E[?7h\E[?1;4;6l'
+termcapinfo xterm*|xterms*|xs|rxvt* ti@:te@        # use xterm's normal screen buffer (which includes scrollback). Makes scrolling back with mouse/touchpad in X11 useful.
+termcapinfo * Z0=\E[?3h:Z1=\E[?3l
+term screen-256color
+attrcolor b ".I"
