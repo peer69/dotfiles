@@ -102,4 +102,5 @@ filetype off                  " required
 set number
 set gfn=monaco:h15
 syntax on
-
+autocmd InsertEnter * set cul
+autocmd InsertLeave * set nocul
