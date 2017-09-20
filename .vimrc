@@ -99,8 +99,11 @@ endif
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+"Enable Line Numbers
 set number
 set gfn=monaco:h15
+"Enable Syntax Highlighting
 syntax on
+"Enable Cursor Lines in Edit Mode
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
