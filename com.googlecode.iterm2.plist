@@ -266,10 +266,14 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>520 562 400 129 0 0 1440 877 </string>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>410 363 620 392 0 0 1440 877 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>327 335 796 473 0 0 1440 877 </string>
+	<string>327 427 918 381 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 877 0 0 1440 877 </string>
+	<string>160 106 1116 673 0 0 1440 877 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -909,8 +913,12 @@
 	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>C731FFD9-096C-48B9-8917-7CB28322592D</string>
+	<key>NoSyncPermissionToShowTip</key>
+	<false/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>541960589.35054302</real>
+	<key>PasteTabToStringTabStopSize</key>
+	<integer>4</integer>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -955,17 +963,21 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-05T16:38:05Z</date>
+	<date>2018-09-23T23:30:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>TabStyle</key>
 	<integer>0</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>ToolbeltTools</key>
+	<array>
+		<string>Command History</string>
+	</array>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.2.0</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
