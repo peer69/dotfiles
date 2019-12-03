@@ -111,3 +111,4 @@ autocmd InsertLeave * set nocul
 "Enable copy/paste to clipboard with C-c and C-v
 vnoremap <C-c> :w !pbcopy<CR><CR> 
 noremap <C-v> :r !pbpaste<CR><CR>
+set backspace=indent,eol,start
